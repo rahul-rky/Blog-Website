@@ -1,0 +1,28 @@
+<%- include("header"); -%>
+
+<div class="container-compose">
+<p></p>
+<h1>Compose</h1>
+<form action="/compose" method="POST">
+        <div class="mb-3">
+          <label class="form-label">Title</label>
+          <input type="text" name = "title" class="form-control" >
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Post</label>
+          <textarea rows = "2" type = "text" name="briefIntroduction" class="form-control"></textarea>
+        </div>
+
+      <div class="mb-3">
+        <label class="form-label">Post</label>
+        <textarea rows = "5" type = "text" name="content" class="form-control"></textarea>
+      </div>
+
+      <p></p>
+      <button type="submit" class="btn btn-primary" name="botton">Submit</button>
+</form>
+</div>
+
+
+
+<%- include("footer"); -%>

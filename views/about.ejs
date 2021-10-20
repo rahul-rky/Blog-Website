@@ -1,0 +1,96 @@
+<%- include("header"); -%>
+
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+    
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+    
+    .container {
+      padding: 0 16px;
+      text-align: center;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: auto;
+        display: block;
+      }
+    }
+    </style>
+
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+  
+  <h2 style="text-align:center;">Our Team</h2>
+  <div class="row" style = "text-align: center; padding: 10px;" >
+      <div class="card" style="margin-left: 33%; width: 35%;">
+        <img src="https://picsum.photos/200/200" alt="Jane">
+        <div >
+          <h2>Rahul kumar</h2>
+          <p class="title">Software Developer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>abc@example.com</p>
+      </div>
+    </div>
+  
+    
+    </div>
+
+<%- include("footer"); -%>

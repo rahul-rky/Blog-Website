@@ -1,0 +1,61 @@
+<%- include("header"); -%>
+
+<style>
+    .main {
+            padding: 10px;
+            margin: auto;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+            background-color: rgb(215, 221, 221);
+            
+        }
+
+        .user-pic {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .user-pic-wrapper {
+            width: 200;
+        }
+
+        .user-data {
+            font-size: 20px;
+            /* display: flex; */
+            padding: -100px;
+            /* flex-direction: column;
+            justify-content: baseline; */
+            text-align: left;
+        }
+        h3{
+            font-weight: bold;
+        }
+</style>
+
+<div class="main">
+    <div class="user-pic-wrapper">
+        <div class="user-pic">
+            <img class="user-pic" src="https://picsum.photos/200/300" />
+        </div>
+        <div class="user-data">
+            <h3><%= userName %></h1>
+
+                <h3><%= userEmail %></h1>
+
+
+            <!-- <h3>70040125254</h1> -->
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+<%- include("footer"); -%>

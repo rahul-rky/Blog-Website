@@ -1,0 +1,44 @@
+<%- include("header"); -%>
+
+    <div class="container">
+        <p></p>
+        <br>
+        <h1>
+            <%= page1 %>
+        </h1>
+        <p>
+            <%= homeStartingContent %>
+        </p>
+        </br>
+        </hr>
+
+
+        <p>
+            <%= middleContent %>
+        </p>
+
+        <div class="row">
+
+            <% if(blogs.length<1){%>
+                <p class="text-white">No posts yet, create a new one</p>
+                <% } %>
+
+
+                    <% blogs.forEach(blog=>{ %>
+                        <div class = "container">
+                            <h3>
+                                <%= blog.title%>
+                            </h3>
+                            <p>
+                                <%= blog.briefIntroduction + "...!"%>
+                            </p>
+                            <a href= "/posts/<%= blog.title %>">Read more</a>
+                        </div>
+                        <!-- <img src="./uploads/<%=encodeURI(blog.img)%>"> -->
+                        <% }) %>
+
+
+         </div>
+    </div>
+        <%- include("footer"); -%>
+
